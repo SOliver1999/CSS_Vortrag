@@ -1,0 +1,39 @@
+/*.card-front {
+    border: 1px solid black;
+    background-image: url("/images/bg-card-front.png");
+    background-repeat: no-repeat;
+    width: 447px;
+    height: 245px;
+}
+
+.card-rear {
+    border: 1px solid black;
+    background-image: url("/images/bg-card-back.png");
+    background-repeat: no-repeat;
+    width: 447px;
+    height: 245px;
+}*/
+
+.inhalt {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.card-front {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.card-back {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.form {
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+.div4 {
+    grid-area: 3 / 4 / 4 / 5;
+}
